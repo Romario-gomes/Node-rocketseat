@@ -30,7 +30,8 @@ class ImportCategoryUseCase{
                 });
             })
             .on("end", ()=>{
-                return resolve(categories);
+                fs.promises.unlink(file.path);
+                resolve(categories);
             })
             .on("error", (err)=>{
                 reject(err);
@@ -52,9 +53,8 @@ class ImportCategoryUseCase{
                     description,
                 });
             }
-        })
+        });
     }
-
 }
 
 export { ImportCategoryUseCase }
