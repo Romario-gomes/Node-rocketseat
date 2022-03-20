@@ -1,4 +1,4 @@
-import { SpecificationsRepository } from "../../repositories/implementations/SpecificationsRepository";
+/* import { SpecificationsRepository } from "../../repositories/implementations/SpecificationsRepository";
 import { CrateSpecificationController } from "./CreateSpecificationController";
 import { CreateSpecificationUseCase } from "./CreateSpecificationUseCase";
 
@@ -10,4 +10,4 @@ const createSpecificationController = new CrateSpecificationController(
   createSpecificationUseCase
 );
 
-export { createSpecificationController };
+export { createSpecificationController }; */
